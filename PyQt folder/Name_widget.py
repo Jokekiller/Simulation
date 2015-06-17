@@ -29,4 +29,4 @@ class NameWidget(QWidget):
     def display_name(self):
         name = self.name.text()
         print(name)
-        self.NameEntered.
+        self.NameEntered.emit()

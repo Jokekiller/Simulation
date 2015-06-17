@@ -26,6 +26,13 @@ class ExampleWindow(QMainWindow):
 
         #set central widget
         self.setCentralWidget(self.widget)
+
+        #connections
+        self.name.NameEntered.connect(self.name_entered)
+
+    def name_entered(self):
+        print("A name entered")
+    
         
 if __name__ == "__main__":
     app = QApplication(sys.argv)
