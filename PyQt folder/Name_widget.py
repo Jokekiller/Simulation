@@ -3,7 +3,7 @@ from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 
 class NameWidget(QWidget):
-    NameEntered = PyqtSignal()
+    NameEntered = pyqtSignal()
     def __init__(self):
         super().__init__()
 
