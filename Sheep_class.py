@@ -4,10 +4,10 @@ from Animal_class import *
 class Sheep(Animal):
   """A Sheep"""
   #constructor
-  def __init__(self):
+  def __init__(self, name):
     super().__init__(1,5,6)
     self._type = "Sheep"
-    self._name = "Dave"
+    self._name = name
 
   def grow(self, food, water):
     if food >= self._food_need and water >= self._water_need:
